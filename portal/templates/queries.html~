@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<div align="center">
+<form action="" method="post">
+{%csrf_token%}
+
+{{ queryform.as_p }}
+
+<input type = "submit" value = "Ask"/>
+</form>
+<br><br>
+<div id="queries">
+{%for query in queries%}
+{{query.user.orgname}}
+<br>
+{{query.user.designation}}
+<br>
+{{query.body}}
+<br>
+<form id = "NewAnswerForm" onsubmit="return false">
+<input id = "body{{query.id}}" type = "text" />
+<button id ="{{query.id}}" class = "asnwerButton" onclick="createtask(this)">Answer</button>
+</form>
+<a id = "{{query.id}}" onclick="funct(this)">Show Answers</a>
+<div id = "answers{{query.id}}" style="display:none" >
+{%for ans in answers%}
+{%if ans.query == query %}
+<br>
+{{ans.body}}
+<br>
+{{ans.user.orgname}}
+<br>
+{%endif%}
+{%endfor%}
+</div>
+<br>
+<br>
+{%endfor%}
+</div>
+<script type = "text/javascript">
+function createtask(e){
+	var id = e.id.toString();
+	var str = '#body' + id;
+	var str2 = "#answers" + id;
+	$.ajax({
+		type: "POST",
+		url: "/answer/",
+		dataType: "json",
+		async: true,
+		data: {
+			csrfmiddlewaretoken: '{{csrf_token}}',
+			query_id: id,
+			body:$(str).val() ,
+
+		},
+		success: function(json){
+			$('#output').html(json.message);
+			$("#queries").load(location.href + " #queries");
+		}
+	});
+}
+
+function funct(e){
+	var id = e.id;
+	var a = '#answers' + id;
+	$(a).toggle('slow');
+}
+</script>
+
+</body>
+</html>

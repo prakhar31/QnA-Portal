@@ -1,0 +1,1521 @@
+[02/Feb/2016 17:54:51] WARNING [django.request:170] Not Found: /login/css/style.css
+[02/Feb/2016 17:54:51] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[02/Feb/2016 17:54:51] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[02/Feb/2016 17:54:51] WARNING [django.request:170] Not Found: /login/js/demo.js
+[02/Feb/2016 17:54:52] WARNING [django.request:170] Not Found: /login/css/style.css
+[02/Feb/2016 17:54:52] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[02/Feb/2016 18:38:33] WARNING [django.request:170] Not Found: /login/css/style.css
+[02/Feb/2016 18:38:33] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[02/Feb/2016 18:38:33] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[02/Feb/2016 18:38:33] WARNING [django.request:170] Not Found: /login/js/demo.js
+[02/Feb/2016 18:43:11] WARNING [django.request:170] Not Found: /editproject/11
+[02/Feb/2016 18:43:12] WARNING [django.request:170] Not Found: /favicon.ico
+[02/Feb/2016 18:43:43] WARNING [django.request:170] Not Found: /editproject/11
+[02/Feb/2016 18:43:43] WARNING [django.request:170] Not Found: /editproject/11
+[02/Feb/2016 18:43:57] WARNING [django.request:170] Not Found: /editproject/11
+[02/Feb/2016 18:44:12] WARNING [django.request:170] Not Found: /editproject/11
+[03/Feb/2016 04:03:27] ERROR [django.request:256] Internal Server Error: /aboutus/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 368, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 240, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 247, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 127, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import 'portal.views.AboutusView'. View does not exist in module portal.views.
+[03/Feb/2016 04:03:27] WARNING [django.request:170] Not Found: /favicon.ico
+[03/Feb/2016 04:03:44] ERROR [django.request:256] Internal Server Error: /aboutus/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 314, in AboutusView
+    return render_to_response('about.html',context,context_instance  = RequestContext(request))
+NameError: global name 'context' is not defined
+[03/Feb/2016 04:03:55] WARNING [django.request:170] Not Found: /aboutus/modernizr.js
+[03/Feb/2016 04:03:55] WARNING [django.request:170] Not Found: /aboutus/{%
+[03/Feb/2016 04:05:11] WARNING [django.request:170] Not Found: /aboutus/modernizr.js
+[03/Feb/2016 04:05:11] WARNING [django.request:170] Not Found: /aboutus/{%
+[03/Feb/2016 04:05:15] WARNING [django.request:170] Not Found: /aboutus/modernizr.js
+[03/Feb/2016 04:05:15] WARNING [django.request:170] Not Found: /aboutus/{%
+[03/Feb/2016 04:05:44] WARNING [django.request:170] Not Found: /aboutus/{%
+[03/Feb/2016 04:05:46] WARNING [django.request:170] Not Found: /aboutus/{%
+[03/Feb/2016 04:10:14] WARNING [django.request:170] Not Found: /editpost/
+[03/Feb/2016 04:16:02] ERROR [django.request:256] Internal Server Error: /queries/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 150, in QueriesView
+    return render_to_response('home1.html',context,context_instance  = RequestContext(request))
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 45, in render_to_response
+    using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 116, in render_to_string
+    template_name, context, context_instance, dirs, dictionary)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 208, in render_to_string
+    t = self.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 1014, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'endfor', expected 'elif', 'else' or 'endif'
+[03/Feb/2016 04:19:48] ERROR [django.request:256] Internal Server Error: /editmedia/1
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 426, in EditMediaView
+    form = MediaForm(request.POST or None,instance = project)
+NameError: global name 'project' is not defined
+[03/Feb/2016 04:20:27] WARNING [django.request:170] Not Found: /editmedia/46
+[03/Feb/2016 04:20:34] WARNING [django.request:170] Not Found: /editmedia/2
+[03/Feb/2016 04:20:59] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 04:20:59] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 04:20:59] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 04:20:59] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 04:34:14] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 04:34:14] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 04:34:14] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 04:34:14] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 04:34:22] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 04:34:22] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 04:34:22] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 04:34:22] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 04:34:25] ERROR [django.request:256] Internal Server Error: /changepass/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 55, in PassChangeView
+    return render_to_response('changepass.html',{'form':form},context_instance = RequestContext(request))
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 45, in render_to_response
+    using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 138, in render_to_string
+    raise TemplateDoesNotExist(template_name)
+TemplateDoesNotExist: changepass.html
+[03/Feb/2016 04:35:17] WARNING [django.request:170] Not Found: /changepass/css/style.css
+[03/Feb/2016 04:35:17] WARNING [django.request:170] Not Found: /changepass/js/jquery.particleground.js
+[03/Feb/2016 04:35:18] WARNING [django.request:170] Not Found: /changepass/js/materialize.min.js
+[03/Feb/2016 04:35:18] WARNING [django.request:170] Not Found: /changepass/js/demo.js
+[03/Feb/2016 04:35:24] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 04:35:24] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 04:35:24] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 04:35:24] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 04:35:44] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 04:35:44] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 04:35:44] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 04:35:44] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 07:51:24] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 07:51:24] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 07:51:24] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 07:51:24] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 07:51:26] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 07:52:32] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 07:52:32] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 07:52:33] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 07:52:33] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 07:52:38] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 07:52:38] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 07:52:38] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 07:52:39] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 07:52:39] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 07:53:25] WARNING [django.request:170] Not Found: /register/{% static
+[03/Feb/2016 07:54:04] WARNING [django.request:170] Not Found: /favicon.ico
+[03/Feb/2016 07:54:04] WARNING [django.request:170] Not Found: /favicon.ico
+[03/Feb/2016 11:35:04] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 11:35:04] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 11:35:04] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 11:35:04] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 11:35:04] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 11:35:17] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 11:35:17] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 11:35:17] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 11:35:17] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 11:35:17] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 11:35:23] WARNING [django.request:170] Not Found: /register/{% static
+[03/Feb/2016 11:36:29] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 11:36:29] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 11:36:29] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 11:36:29] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 11:36:29] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 11:36:45] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 11:36:45] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 11:42:17] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 11:42:17] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 11:42:17] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 11:42:17] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 11:42:17] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 11:42:29] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 11:42:29] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 11:42:44] WARNING [django.request:170] Not Found: /register/{% static
+[03/Feb/2016 11:43:34] ERROR [django.request:256] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 29, in PuserRegistration
+    designation = form.cleaned_data['designation'],
+KeyError: 'designation'
+[03/Feb/2016 11:43:35] WARNING [django.request:170] Not Found: /favicon.ico
+[03/Feb/2016 13:36:37] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 13:36:37] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 13:36:37] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 13:36:37] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 13:36:38] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 13:37:18] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 13:37:25] WARNING [django.request:170] Not Found: /editprofile/{% static
+[03/Feb/2016 13:37:47] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 13:38:03] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 13:38:23] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 13:38:36] WARNING [django.request:170] Not Found: /profile/
+[03/Feb/2016 13:38:37] WARNING [django.request:170] Not Found: /favicon.ico
+[03/Feb/2016 13:38:39] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 13:38:39] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 13:38:39] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 13:38:39] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 13:38:39] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 13:43:24] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 13:44:48] WARNING [django.request:170] Not Found: /editpost/{% static
+[03/Feb/2016 13:48:15] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 13:48:24] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 13:48:36] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 13:48:44] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 13:48:53] WARNING [django.request:170] Not Found: /editevent/{% static
+[03/Feb/2016 13:49:07] WARNING [django.request:170] Not Found: /editprofile/{% static
+[03/Feb/2016 13:49:10] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 13:49:14] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 13:49:16] WARNING [django.request:170] Not Found: /editprofile/{% static
+[03/Feb/2016 13:49:27] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 13:49:31] WARNING [django.request:170] Not Found: /editprofile/{% static
+[03/Feb/2016 13:49:43] WARNING [django.request:170] Not Found: /editpost/{% static
+[03/Feb/2016 13:51:20] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[03/Feb/2016 13:51:20] WARNING [django.request:170] Not Found: /mentors/{% static
+[03/Feb/2016 13:51:32] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 13:51:32] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 13:51:32] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 13:51:32] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 13:51:32] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 13:52:03] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 13:52:07] WARNING [django.request:170] Not Found: /editprofile/{% static
+[03/Feb/2016 13:52:55] WARNING [django.request:170] Not Found: /editpost/{% static
+[03/Feb/2016 13:53:32] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 13:53:36] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 13:53:42] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[03/Feb/2016 13:53:42] WARNING [django.request:170] Not Found: /mentors/{% static
+[03/Feb/2016 13:53:51] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 13:53:51] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 13:53:51] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 13:53:51] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 13:53:51] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 13:54:59] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 13:55:03] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 13:55:17] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[03/Feb/2016 13:55:17] WARNING [django.request:170] Not Found: /mentors/{% static
+[03/Feb/2016 13:57:30] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[03/Feb/2016 13:57:30] WARNING [django.request:170] Not Found: /mentors/{% static
+[03/Feb/2016 13:57:35] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 14:01:58] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 14:02:05] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 14:02:09] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 14:02:37] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 14:02:37] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 14:02:37] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 14:02:37] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 14:02:37] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 14:02:45] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 14:02:45] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 14:02:45] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 14:02:45] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 14:02:45] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 14:03:40] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 14:03:45] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[03/Feb/2016 14:03:45] WARNING [django.request:170] Not Found: /mentors/{% static
+[03/Feb/2016 14:03:59] WARNING [django.request:170] Not Found: /mentors/{% static
+[03/Feb/2016 14:06:50] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 14:06:50] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 14:06:50] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 14:06:50] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 14:06:57] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 14:06:57] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 14:06:57] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 14:06:57] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 14:21:20] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 14:21:20] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 14:21:20] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 14:21:20] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 14:21:20] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 14:23:34] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 14:23:39] WARNING [django.request:170] Not Found: /editprofile/{% static
+[03/Feb/2016 14:23:46] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 14:23:50] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 14:23:58] WARNING [django.request:170] Not Found: /addproject/{% static
+[03/Feb/2016 14:24:13] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[03/Feb/2016 14:24:13] WARNING [django.request:170] Not Found: /mentors/{% static
+[03/Feb/2016 14:24:21] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 14:24:25] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 14:24:37] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[03/Feb/2016 14:24:37] WARNING [django.request:170] Not Found: /mentors/{% static
+[03/Feb/2016 14:25:30] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 14:25:34] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 14:25:41] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 14:25:41] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 14:25:41] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 14:25:41] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 14:25:42] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 14:31:59] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 14:31:59] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 14:31:59] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 14:31:59] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 14:32:01] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 14:48:50] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 14:48:50] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 14:48:50] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 14:48:50] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 14:48:52] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 14:48:52] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 14:48:52] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 14:48:52] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 14:50:42] ERROR [django.request:256] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 29, in PuserRegistration
+    designation = form.cleaned_data['designation'],
+KeyError: 'designation'
+[03/Feb/2016 14:50:42] WARNING [django.request:170] Not Found: /favicon.ico
+[03/Feb/2016 14:50:42] WARNING [django.request:170] Not Found: /favicon.ico
+[03/Feb/2016 14:51:24] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 14:51:24] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 14:51:24] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 14:51:24] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 14:51:24] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 14:51:24] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 14:51:24] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 14:51:24] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 14:51:54] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 14:51:54] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 14:51:54] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 14:51:54] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 14:51:54] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 14:51:54] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 14:51:54] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 14:51:54] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 14:52:21] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 14:52:21] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 14:52:21] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 14:52:21] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 14:52:21] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 14:52:21] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 14:52:21] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 14:52:21] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 14:59:03] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 14:59:18] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 14:59:26] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 15:00:22] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 15:00:27] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[03/Feb/2016 15:00:27] WARNING [django.request:170] Not Found: /mentors/{% static
+[03/Feb/2016 15:00:30] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 15:00:34] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 15:00:50] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[03/Feb/2016 15:00:50] WARNING [django.request:170] Not Found: /mentors/{% static
+[03/Feb/2016 15:03:05] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 15:03:18] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 15:03:21] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 15:04:12] WARNING [django.request:170] Not Found: /editevent/{% static
+[03/Feb/2016 15:09:15] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 15:09:15] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 15:09:15] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 15:09:15] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 15:09:18] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 15:09:22] WARNING [django.request:170] Not Found: /register/{% static
+[03/Feb/2016 15:10:55] ERROR [django.request:256] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 29, in PuserRegistration
+    designation = form.cleaned_data['designation'],
+KeyError: 'designation'
+[03/Feb/2016 15:25:51] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 15:25:51] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 15:25:51] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 15:25:51] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 15:25:51] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 15:25:55] WARNING [django.request:170] Not Found: /accounts/login/
+[03/Feb/2016 15:25:56] WARNING [django.request:170] Not Found: /favicon.ico
+[03/Feb/2016 15:29:37] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 15:29:51] WARNING [django.request:170] Not Found: /editprofile/{% static
+[03/Feb/2016 15:30:21] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 15:30:21] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 15:30:21] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 15:30:21] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 15:30:21] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 15:30:29] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 15:30:29] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 15:30:29] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 15:30:29] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 15:30:30] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 15:31:44] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 15:32:12] WARNING [django.request:170] Not Found: /editprofile/{% static
+[03/Feb/2016 15:32:34] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 15:32:37] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 15:32:41] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 15:32:47] WARNING [django.request:170] Not Found: /addproject/{% static
+[03/Feb/2016 15:32:56] WARNING [django.request:170] Not Found: /editproject/{% static
+[03/Feb/2016 15:33:34] WARNING [django.request:170] Not Found: /editevent/{% static
+[03/Feb/2016 15:34:00] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[03/Feb/2016 15:34:00] WARNING [django.request:170] Not Found: /mentors/{% static
+[03/Feb/2016 15:37:14] WARNING [django.request:170] Not Found: /editpost/{% static
+[03/Feb/2016 15:37:37] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 15:37:37] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 15:37:37] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 15:37:37] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 15:37:37] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 15:38:14] WARNING [django.request:170] Not Found: /community/{% static
+[03/Feb/2016 15:38:25] WARNING [django.request:170] Not Found: /profile/
+[03/Feb/2016 15:38:32] WARNING [django.request:170] Not Found: /accounts/login/
+[03/Feb/2016 15:38:36] WARNING [django.request:170] Not Found: /accounts/login/
+[03/Feb/2016 15:38:46] WARNING [django.request:170] Not Found: /accounts/login/
+[03/Feb/2016 15:39:28] WARNING [django.request:170] Not Found: /changepass/css/style.css
+[03/Feb/2016 15:39:28] WARNING [django.request:170] Not Found: /changepass/js/materialize.min.js
+[03/Feb/2016 15:39:28] WARNING [django.request:170] Not Found: /changepass/js/jquery.particleground.js
+[03/Feb/2016 15:39:28] WARNING [django.request:170] Not Found: /changepass/js/demo.js
+[03/Feb/2016 15:39:28] WARNING [django.request:170] Not Found: /changepass/{% static
+[03/Feb/2016 15:39:44] WARNING [django.request:170] Not Found: /changepass/css/style.css
+[03/Feb/2016 15:39:44] WARNING [django.request:170] Not Found: /changepass/js/jquery.particleground.js
+[03/Feb/2016 15:39:44] WARNING [django.request:170] Not Found: /changepass/js/materialize.min.js
+[03/Feb/2016 15:39:44] WARNING [django.request:170] Not Found: /changepass/js/demo.js
+[03/Feb/2016 15:39:44] WARNING [django.request:170] Not Found: /changepass/{% static
+[03/Feb/2016 15:45:20] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 15:45:20] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 15:45:20] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 15:45:20] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 15:45:20] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 15:45:41] WARNING [django.request:170] Not Found: /profile/{% static
+[03/Feb/2016 15:47:07] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 15:47:07] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 15:47:08] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 15:47:08] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 15:47:08] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 15:47:08] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 15:47:08] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 15:47:08] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 15:47:08] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 15:48:49] WARNING [django.request:170] Not Found: /favicon.ico
+[03/Feb/2016 15:48:49] WARNING [django.request:170] Not Found: /favicon.ico
+[03/Feb/2016 15:49:19] WARNING [django.request:170] Not Found: /register/{% static
+[03/Feb/2016 15:49:41] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 15:49:41] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 15:49:41] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 15:49:41] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 15:49:41] WARNING [django.request:170] Not Found: /login/{% static
+[03/Feb/2016 15:49:41] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 15:49:42] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 15:49:42] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 15:49:45] WARNING [django.request:170] Not Found: /changepass/css/style.css
+[03/Feb/2016 15:49:45] WARNING [django.request:170] Not Found: /changepass/js/materialize.min.js
+[03/Feb/2016 15:49:45] WARNING [django.request:170] Not Found: /changepass/js/jquery.particleground.js
+[03/Feb/2016 15:49:45] WARNING [django.request:170] Not Found: /changepass/js/demo.js
+[03/Feb/2016 15:49:45] WARNING [django.request:170] Not Found: /changepass/{% static
+[03/Feb/2016 15:49:45] WARNING [django.request:170] Not Found: /changepass/css/style.css
+[03/Feb/2016 15:49:45] WARNING [django.request:170] Not Found: /changepass/js/materialize.min.js
+[03/Feb/2016 15:49:46] WARNING [django.request:170] Not Found: /changepass/js/jquery.particleground.js
+[03/Feb/2016 15:49:46] WARNING [django.request:170] Not Found: /changepass/js/demo.js
+[03/Feb/2016 15:49:52] WARNING [django.request:170] Not Found: /changepass/css/style.css
+[03/Feb/2016 15:49:52] WARNING [django.request:170] Not Found: /changepass/js/jquery.particleground.js
+[03/Feb/2016 15:49:52] WARNING [django.request:170] Not Found: /changepass/js/materialize.min.js
+[03/Feb/2016 15:49:52] WARNING [django.request:170] Not Found: /changepass/js/demo.js
+[03/Feb/2016 15:49:52] WARNING [django.request:170] Not Found: /changepass/{% static
+[03/Feb/2016 15:49:52] WARNING [django.request:170] Not Found: /changepass/css/style.css
+[03/Feb/2016 15:49:52] WARNING [django.request:170] Not Found: /changepass/js/materialize.min.js
+[03/Feb/2016 15:49:52] WARNING [django.request:170] Not Found: /changepass/js/jquery.particleground.js
+[03/Feb/2016 15:49:52] WARNING [django.request:170] Not Found: /changepass/js/demo.js
+[03/Feb/2016 15:49:56] WARNING [django.request:170] Not Found: /register/{% static
+[03/Feb/2016 15:50:18] WARNING [django.request:170] Not Found: /register/{% static
+[03/Feb/2016 15:50:23] WARNING [django.request:170] Not Found: /favicon.ico
+[03/Feb/2016 15:50:23] WARNING [django.request:170] Not Found: /favicon.ico
+[03/Feb/2016 15:50:28] WARNING [django.request:170] Not Found: /changepass/css/style.css
+[03/Feb/2016 15:50:28] WARNING [django.request:170] Not Found: /changepass/js/materialize.min.js
+[03/Feb/2016 15:50:28] WARNING [django.request:170] Not Found: /changepass/js/jquery.particleground.js
+[03/Feb/2016 15:50:28] WARNING [django.request:170] Not Found: /changepass/js/demo.js
+[03/Feb/2016 15:50:29] WARNING [django.request:170] Not Found: /changepass/{% static
+[03/Feb/2016 15:50:29] WARNING [django.request:170] Not Found: /changepass/css/style.css
+[03/Feb/2016 15:50:29] WARNING [django.request:170] Not Found: /changepass/js/materialize.min.js
+[03/Feb/2016 15:50:29] WARNING [django.request:170] Not Found: /changepass/js/jquery.particleground.js
+[03/Feb/2016 15:50:29] WARNING [django.request:170] Not Found: /changepass/js/demo.js
+[03/Feb/2016 16:10:01] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 16:10:01] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 16:10:01] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 16:10:01] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 16:11:37] ERROR [django.request:256] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 29, in PuserRegistration
+    designation = form.cleaned_data['designation'],
+KeyError: 'designation'
+[03/Feb/2016 16:11:37] WARNING [django.request:170] Not Found: /favicon.ico
+[03/Feb/2016 17:56:45] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 17:56:45] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 17:56:45] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 17:56:45] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 18:01:28] ERROR [django.request:256] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 29, in PuserRegistration
+    designation = form.cleaned_data['designation'],
+KeyError: 'designation'
+[03/Feb/2016 18:01:28] WARNING [django.request:170] Not Found: /favicon.ico
+[03/Feb/2016 18:05:43] ERROR [django.request:256] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 33, in PuserRegistration
+    stu.save()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 710, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 738, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 822, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 861, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: NOT NULL constraint failed: portal_puser.designation
+[03/Feb/2016 18:14:40] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 18:14:40] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 18:14:40] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 18:14:40] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 18:31:44] ERROR [django.request:256] Internal Server Error: /profile/aaaaa
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 319, in ProfileView
+    return render_to_response('profile1.html',context,context_instance  = RequestContext(request))
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 45, in render_to_response
+    using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 116, in render_to_string
+    template_name, context, context_instance, dirs, dictionary)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 208, in render_to_string
+    t = self.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 1014, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 1028, in do_if
+    nodelist = parser.parse(('endif',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'endblock', expected 'endif'
+[03/Feb/2016 18:32:18] ERROR [django.request:256] Internal Server Error: /profile/aaaaa
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 319, in ProfileView
+    return render_to_response('profile1.html',context,context_instance  = RequestContext(request))
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 45, in render_to_response
+    using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 116, in render_to_string
+    template_name, context, context_instance, dirs, dictionary)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 208, in render_to_string
+    t = self.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 1028, in do_if
+    nodelist = parser.parse(('endif',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'endblock', expected 'endif'
+[03/Feb/2016 18:32:21] ERROR [django.request:256] Internal Server Error: /profile/aaaaa
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 319, in ProfileView
+    return render_to_response('profile1.html',context,context_instance  = RequestContext(request))
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 45, in render_to_response
+    using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 116, in render_to_string
+    template_name, context, context_instance, dirs, dictionary)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 208, in render_to_string
+    t = self.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 1028, in do_if
+    nodelist = parser.parse(('endif',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'endblock', expected 'endif'
+[03/Feb/2016 18:35:23] ERROR [django.request:256] Internal Server Error: /profile/aaaaa
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 319, in ProfileView
+    return render_to_response('profile1.html',context,context_instance  = RequestContext(request))
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 45, in render_to_response
+    using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 116, in render_to_string
+    template_name, context, context_instance, dirs, dictionary)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 208, in render_to_string
+    t = self.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 1028, in do_if
+    nodelist = parser.parse(('endif',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'endblock', expected 'endif'
+[03/Feb/2016 18:37:00] ERROR [django.request:256] Internal Server Error: /profile/aaaaa
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 319, in ProfileView
+    return render_to_response('profile1.html',context,context_instance  = RequestContext(request))
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 45, in render_to_response
+    using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 116, in render_to_string
+    template_name, context, context_instance, dirs, dictionary)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 208, in render_to_string
+    t = self.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 1028, in do_if
+    nodelist = parser.parse(('endif',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'endblock', expected 'endif'
+[03/Feb/2016 18:38:41] ERROR [django.request:256] Internal Server Error: /profile/aaaaa
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 319, in ProfileView
+    return render_to_response('profile1.html',context,context_instance  = RequestContext(request))
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 45, in render_to_response
+    using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 116, in render_to_string
+    template_name, context, context_instance, dirs, dictionary)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 208, in render_to_string
+    t = self.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 1028, in do_if
+    nodelist = parser.parse(('endif',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'endblock', expected 'endif'
+[03/Feb/2016 18:39:50] ERROR [django.request:256] Internal Server Error: /profile/aaaaa
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 319, in ProfileView
+    return render_to_response('profile1.html',context,context_instance  = RequestContext(request))
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 45, in render_to_response
+    using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 116, in render_to_string
+    template_name, context, context_instance, dirs, dictionary)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 208, in render_to_string
+    t = self.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 1028, in do_if
+    nodelist = parser.parse(('endif',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'endblock', expected 'endif'
+[03/Feb/2016 18:39:51] ERROR [django.request:256] Internal Server Error: /profile/aaaaa
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 319, in ProfileView
+    return render_to_response('profile1.html',context,context_instance  = RequestContext(request))
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 45, in render_to_response
+    using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 116, in render_to_string
+    template_name, context, context_instance, dirs, dictionary)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 208, in render_to_string
+    t = self.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 1028, in do_if
+    nodelist = parser.parse(('endif',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'endblock', expected 'endif'
+[03/Feb/2016 18:39:52] ERROR [django.request:256] Internal Server Error: /profile/aaaaa
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 319, in ProfileView
+    return render_to_response('profile1.html',context,context_instance  = RequestContext(request))
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 45, in render_to_response
+    using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 116, in render_to_string
+    template_name, context, context_instance, dirs, dictionary)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 208, in render_to_string
+    t = self.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 1028, in do_if
+    nodelist = parser.parse(('endif',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'endblock', expected 'endif'
+[03/Feb/2016 18:44:13] ERROR [django.request:256] Internal Server Error: /profile/aaaaa
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 319, in ProfileView
+    return render_to_response('profile1.html',context,context_instance  = RequestContext(request))
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 45, in render_to_response
+    using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 116, in render_to_string
+    template_name, context, context_instance, dirs, dictionary)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 208, in render_to_string
+    t = self.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 1028, in do_if
+    nodelist = parser.parse(('endif',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'endblock', expected 'endif'
+[03/Feb/2016 18:44:14] ERROR [django.request:256] Internal Server Error: /profile/aaaaa
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 319, in ProfileView
+    return render_to_response('profile1.html',context,context_instance  = RequestContext(request))
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 45, in render_to_response
+    using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 116, in render_to_string
+    template_name, context, context_instance, dirs, dictionary)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 208, in render_to_string
+    t = self.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 1028, in do_if
+    nodelist = parser.parse(('endif',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'endblock', expected 'endif'
+[03/Feb/2016 18:46:49] ERROR [django.request:256] Internal Server Error: /profile/aaaaa
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/sharat910/django/leap1/portal/views.py", line 319, in ProfileView
+    return render_to_response('profile1.html',context,context_instance  = RequestContext(request))
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 45, in render_to_response
+    using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 116, in render_to_string
+    template_name, context, context_instance, dirs, dictionary)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 208, in render_to_string
+    t = self.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'endif', expected 'endblock'
+[03/Feb/2016 18:52:15] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 18:52:15] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 18:52:15] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 18:52:15] WARNING [django.request:170] Not Found: /login/js/demo.js
+[03/Feb/2016 18:52:46] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[03/Feb/2016 18:52:46] WARNING [django.request:170] Not Found: /login/css/style.css
+[03/Feb/2016 18:52:46] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[03/Feb/2016 18:52:46] WARNING [django.request:170] Not Found: /login/js/demo.js
+[04/Feb/2016 03:39:12] WARNING [django.request:170] Not Found: /login/css/style.css
+[04/Feb/2016 03:39:12] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[04/Feb/2016 03:39:12] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[04/Feb/2016 03:39:12] WARNING [django.request:170] Not Found: /login/js/demo.js
+[04/Feb/2016 05:42:45] WARNING [django.request:170] Not Found: /login/css/style.css
+[04/Feb/2016 05:42:45] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[04/Feb/2016 05:42:45] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[04/Feb/2016 05:42:45] WARNING [django.request:170] Not Found: /login/js/demo.js
+[04/Feb/2016 05:42:49] WARNING [django.request:170] Not Found: /login/{% static
+[04/Feb/2016 05:42:57] WARNING [django.request:170] Not Found: /register/{% static
+[04/Feb/2016 05:44:18] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[04/Feb/2016 05:44:18] WARNING [django.request:170] Not Found: /login/css/style.css
+[04/Feb/2016 05:44:18] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[04/Feb/2016 05:44:19] WARNING [django.request:170] Not Found: /login/js/demo.js
+[04/Feb/2016 05:44:19] WARNING [django.request:170] Not Found: /login/{% static
+[04/Feb/2016 05:45:51] WARNING [django.request:170] Not Found: /accounts/login/
+[04/Feb/2016 05:45:52] WARNING [django.request:170] Not Found: /favicon.ico
+[04/Feb/2016 05:45:58] WARNING [django.request:170] Not Found: /accounts/login/
+[04/Feb/2016 05:45:58] WARNING [django.request:170] Not Found: /favicon.ico
+[04/Feb/2016 05:46:07] WARNING [django.request:170] Not Found: /accounts/login/
+[04/Feb/2016 05:53:53] WARNING [django.request:170] Not Found: /editpost/{% static
+[04/Feb/2016 05:56:23] WARNING [django.request:170] Not Found: /profile/{% static
+[04/Feb/2016 05:56:30] WARNING [django.request:170] Not Found: /addproject/{% static
+[04/Feb/2016 05:56:44] WARNING [django.request:170] Not Found: /addmedia/{% static
+[04/Feb/2016 05:56:52] WARNING [django.request:170] Not Found: /community/{% static
+[04/Feb/2016 05:57:01] WARNING [django.request:170] Not Found: /profile/{% static
+[04/Feb/2016 05:57:13] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[04/Feb/2016 05:57:13] WARNING [django.request:170] Not Found: /mentors/{% static
+[04/Feb/2016 06:31:59] WARNING [django.request:170] Not Found: /login/js/demo.js
+[04/Feb/2016 06:31:59] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[04/Feb/2016 06:31:59] WARNING [django.request:170] Not Found: /login/css/style.css
+[04/Feb/2016 06:31:59] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[04/Feb/2016 06:31:59] WARNING [django.request:170] Not Found: /login/{% static
+[04/Feb/2016 06:32:20] WARNING [django.request:170] Not Found: /login/css/style.css
+[04/Feb/2016 06:32:20] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[04/Feb/2016 06:32:20] WARNING [django.request:170] Not Found: /login/js/demo.js
+[04/Feb/2016 06:32:20] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[04/Feb/2016 06:32:20] WARNING [django.request:170] Not Found: /login/{% static
+[04/Feb/2016 06:32:23] WARNING [django.request:170] Not Found: /register/{% static
+[04/Feb/2016 17:50:12] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[04/Feb/2016 17:50:41] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[04/Feb/2016 17:50:41] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[04/Feb/2016 17:50:41] WARNING [django.request:170] Not Found: /login/css/style.css
+[04/Feb/2016 17:50:41] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:06:58] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:06:58] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:06:58] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:06:58] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:06:58] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:06:59] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:06:59] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:06:59] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:07:56] WARNING [django.request:170] Not Found: /changepass/css/style.css
+[09/Feb/2016 04:07:56] WARNING [django.request:170] Not Found: /changepass/js/materialize.min.js
+[09/Feb/2016 04:07:56] WARNING [django.request:170] Not Found: /changepass/js/jquery.particleground.js
+[09/Feb/2016 04:07:56] WARNING [django.request:170] Not Found: /changepass/js/demo.js
+[09/Feb/2016 04:07:56] WARNING [django.request:170] Not Found: /changepass/css/style.css
+[09/Feb/2016 04:07:56] WARNING [django.request:170] Not Found: /changepass/js/materialize.min.js
+[09/Feb/2016 04:07:57] WARNING [django.request:170] Not Found: /changepass/js/jquery.particleground.js
+[09/Feb/2016 04:07:57] WARNING [django.request:170] Not Found: /changepass/js/demo.js
+[09/Feb/2016 04:08:38] WARNING [django.request:170] Not Found: /changepass/css/style.css
+[09/Feb/2016 04:08:38] WARNING [django.request:170] Not Found: /changepass/js/materialize.min.js
+[09/Feb/2016 04:08:38] WARNING [django.request:170] Not Found: /changepass/js/jquery.particleground.js
+[09/Feb/2016 04:08:38] WARNING [django.request:170] Not Found: /changepass/js/demo.js
+[09/Feb/2016 04:08:39] WARNING [django.request:170] Not Found: /changepass/css/style.css
+[09/Feb/2016 04:08:40] WARNING [django.request:170] Not Found: /changepass/js/materialize.min.js
+[09/Feb/2016 04:08:40] WARNING [django.request:170] Not Found: /changepass/js/jquery.particleground.js
+[09/Feb/2016 04:08:40] WARNING [django.request:170] Not Found: /changepass/js/demo.js
+[09/Feb/2016 04:08:42] WARNING [django.request:170] Not Found: /favicon.ico
+[09/Feb/2016 04:08:46] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:08:46] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:08:46] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:08:46] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:08:48] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:08:48] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:08:48] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:08:48] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:09:49] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:09:49] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:09:49] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:09:50] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:09:51] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:09:51] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:09:51] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:09:51] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:13:08] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:13:08] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:13:08] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:13:08] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:13:09] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:13:09] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:13:09] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:13:09] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:13:29] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:13:29] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:13:29] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:13:29] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:13:31] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:13:31] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:13:31] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:13:31] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:13:35] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:13:35] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:13:35] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:13:35] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:13:35] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:13:35] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:13:35] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:13:38] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:13:38] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:13:38] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:13:38] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:13:38] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:13:38] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:13:38] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:13:43] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:13:43] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:13:43] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:13:43] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:13:43] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:13:43] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:13:43] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:13:49] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:13:49] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:13:49] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:13:49] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:13:49] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:13:49] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:13:49] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:13:55] WARNING [django.request:170] Not Found: /accounts/login/
+[09/Feb/2016 04:14:03] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:14:03] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:14:03] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:14:03] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:14:03] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:14:03] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:14:03] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:14:03] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:14:08] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:14:08] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:14:08] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:14:08] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:14:08] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:14:08] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:14:08] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:16:57] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:16:57] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:16:57] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:16:57] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:16:58] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:16:58] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:16:58] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:16:58] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:17:07] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:17:07] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:17:07] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:17:07] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 04:17:09] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 04:17:09] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 04:17:09] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 04:17:09] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 10:54:40] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 10:54:40] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 10:54:40] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 10:54:40] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 10:54:42] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 10:54:42] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 10:54:42] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 10:54:42] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 10:54:59] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 10:54:59] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 10:54:59] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 10:54:59] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 10:55:00] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 10:55:00] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 10:55:00] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 10:55:01] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 10:55:21] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 10:55:21] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 10:55:21] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 10:55:21] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 10:55:22] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 10:55:23] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 10:55:23] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 10:55:23] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 10:55:34] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 10:55:34] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 10:55:34] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 10:55:34] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 10:55:36] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 10:55:36] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 10:55:36] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 10:55:36] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 10:56:03] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 10:56:03] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 10:56:03] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 10:56:03] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 10:56:04] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 10:56:04] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 10:56:04] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 10:56:04] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 10:58:11] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 10:58:11] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 10:58:11] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 10:58:11] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 10:58:12] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 10:58:12] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 10:58:12] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 10:58:12] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 11:01:20] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 11:01:20] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 11:01:20] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 11:01:20] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 11:01:21] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 11:01:21] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 11:01:21] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 11:02:02] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 11:02:02] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 11:02:02] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 11:02:02] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 11:02:02] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 11:02:02] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 11:02:02] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 11:29:45] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[09/Feb/2016 11:30:05] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[09/Feb/2016 11:33:08] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[09/Feb/2016 11:33:59] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[09/Feb/2016 11:34:34] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[09/Feb/2016 11:34:51] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[09/Feb/2016 11:35:08] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[09/Feb/2016 11:36:06] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[09/Feb/2016 11:36:28] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[09/Feb/2016 11:36:28] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[09/Feb/2016 11:36:43] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[09/Feb/2016 11:36:43] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[09/Feb/2016 11:37:26] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[09/Feb/2016 11:37:48] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[09/Feb/2016 11:48:47] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[09/Feb/2016 11:48:47] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[09/Feb/2016 12:37:07] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 12:37:08] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 12:37:09] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 12:37:09] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 12:37:17] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 12:37:25] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 12:37:25] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 12:39:02] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 12:39:02] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 12:39:02] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 12:39:04] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 12:39:04] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 12:39:04] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 12:39:04] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 12:39:04] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 12:44:50] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 12:44:50] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 12:44:50] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 12:44:50] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 12:44:51] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 12:44:51] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 12:44:51] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 12:44:51] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 12:45:04] WARNING [django.request:170] Not Found: /favicon.ico
+[09/Feb/2016 12:45:11] WARNING [django.request:170] Not Found: /changepass/css/style.css
+[09/Feb/2016 12:45:11] WARNING [django.request:170] Not Found: /changepass/js/materialize.min.js
+[09/Feb/2016 12:45:11] WARNING [django.request:170] Not Found: /changepass/js/jquery.particleground.js
+[09/Feb/2016 12:45:11] WARNING [django.request:170] Not Found: /changepass/js/demo.js
+[09/Feb/2016 12:45:12] WARNING [django.request:170] Not Found: /changepass/js/demo.js
+[09/Feb/2016 12:56:02] WARNING [django.request:170] Not Found: /accounts/login/
+[09/Feb/2016 12:56:14] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 12:56:14] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 12:56:14] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 12:56:14] WARNING [django.request:170] Not Found: /login/js/demo.js
+[09/Feb/2016 12:56:14] WARNING [django.request:170] Not Found: /login/css/style.css
+[09/Feb/2016 12:56:14] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[09/Feb/2016 12:56:14] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[09/Feb/2016 12:56:14] WARNING [django.request:170] Not Found: /login/js/demo.js
+[15/Feb/2016 15:09:26] WARNING [django.request:170] Not Found: /login/css/style.css
+[15/Feb/2016 15:09:26] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[15/Feb/2016 15:09:26] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[15/Feb/2016 15:09:26] WARNING [django.request:170] Not Found: /login/js/demo.js
+[15/Feb/2016 15:09:26] WARNING [django.request:170] Not Found: /login/css/style.css
+[15/Feb/2016 15:09:27] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[15/Feb/2016 15:09:27] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[15/Feb/2016 15:09:27] WARNING [django.request:170] Not Found: /login/js/demo.js
+[15/Feb/2016 15:12:12] WARNING [django.request:170] Not Found: /favicon.ico
+[15/Feb/2016 15:37:09] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[15/Feb/2016 15:52:46] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[15/Feb/2016 15:52:47] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[17/Feb/2016 06:37:59] WARNING [django.request:170] Not Found: /login/css/style.css
+[17/Feb/2016 06:38:00] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[17/Feb/2016 06:38:00] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[17/Feb/2016 06:38:00] WARNING [django.request:170] Not Found: /login/js/demo.js
+[17/Feb/2016 06:38:02] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[17/Feb/2016 06:38:02] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[17/Feb/2016 06:38:02] WARNING [django.request:170] Not Found: /login/js/demo.js
+[17/Feb/2016 06:41:28] WARNING [django.request:170] Not Found: /login/css/style.css
+[17/Feb/2016 06:41:28] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[17/Feb/2016 06:41:28] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[17/Feb/2016 06:41:29] WARNING [django.request:170] Not Found: /login/js/demo.js
+[17/Feb/2016 06:41:29] WARNING [django.request:170] Not Found: /login/css/style.css
+[17/Feb/2016 06:41:29] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[17/Feb/2016 06:41:29] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[17/Feb/2016 06:41:29] WARNING [django.request:170] Not Found: /login/js/demo.js
+[17/Feb/2016 06:41:48] WARNING [django.request:170] Not Found: /login/css/style.css
+[17/Feb/2016 06:41:48] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[17/Feb/2016 06:41:48] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[17/Feb/2016 06:41:48] WARNING [django.request:170] Not Found: /login/js/demo.js
+[17/Feb/2016 06:41:49] WARNING [django.request:170] Not Found: /login/css/style.css
+[17/Feb/2016 06:41:50] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[17/Feb/2016 06:41:50] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[17/Feb/2016 06:41:50] WARNING [django.request:170] Not Found: /login/js/demo.js
+[17/Feb/2016 06:44:23] WARNING [django.request:170] Not Found: /login/css/style.css
+[17/Feb/2016 06:44:23] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[17/Feb/2016 06:44:23] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[17/Feb/2016 06:44:23] WARNING [django.request:170] Not Found: /login/js/demo.js
+[17/Feb/2016 06:44:24] WARNING [django.request:170] Not Found: /login/css/style.css
+[17/Feb/2016 06:44:24] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[17/Feb/2016 06:44:24] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[17/Feb/2016 06:44:24] WARNING [django.request:170] Not Found: /login/js/demo.js
+[17/Feb/2016 07:32:28] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[17/Feb/2016 07:33:42] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[17/Feb/2016 07:35:04] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[17/Feb/2016 11:54:48] WARNING [django.request:170] Not Found: /login/css/style.css
+[17/Feb/2016 11:54:49] WARNING [django.request:170] Not Found: /login/css/style.css
+[17/Feb/2016 11:54:49] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[17/Feb/2016 11:54:49] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[17/Feb/2016 11:54:49] WARNING [django.request:170] Not Found: /login/js/demo.js
+[17/Feb/2016 11:54:49] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[17/Feb/2016 11:54:51] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[17/Feb/2016 11:54:54] WARNING [django.request:170] Not Found: /login/js/demo.js
+[17/Feb/2016 12:02:01] WARNING [django.request:170] Not Found: /media/leapmembers/prakhar.png)
+[17/Feb/2016 12:02:02] WARNING [django.request:170] Not Found: /media/leapmembers/prakhar.png)
+[17/Feb/2016 12:36:53] WARNING [django.request:170] Not Found: /aboutus/Images/9-small.jpg
+[17/Feb/2016 12:51:51] WARNING [django.request:170] Not Found: /media/leapmembers/.jpg
+[17/Feb/2016 12:57:55] WARNING [django.request:170] Not Found: /media/leapmembers/mohit.jpg
+[17/Feb/2016 12:57:55] WARNING [django.request:170] Not Found: /media/leapmembers/naresh.jpg
+[17/Feb/2016 12:57:56] WARNING [django.request:170] Not Found: /media/leapmembers/mohit.jpg
+[17/Feb/2016 12:57:56] WARNING [django.request:170] Not Found: /media/leapmembers/naresh.jpg
+[17/Feb/2016 12:58:37] WARNING [django.request:170] Not Found: /media/leapmembers/mohit.jpg
+[17/Feb/2016 12:58:37] WARNING [django.request:170] Not Found: /media/leapmembers/naresh.jpg
+[17/Feb/2016 12:58:37] WARNING [django.request:170] Not Found: /media/leapmembers/mohit.jpg
+[17/Feb/2016 12:58:37] WARNING [django.request:170] Not Found: /media/leapmembers/naresh.jpg
+[17/Feb/2016 12:59:31] WARNING [django.request:170] Not Found: /media/leapmembers/naresh.jpg
+[17/Feb/2016 12:59:31] WARNING [django.request:170] Not Found: /media/leapmembers/naresh.jpg
+[17/Feb/2016 13:00:56] WARNING [django.request:170] Not Found: /media/leapmembers/prakhar.jpg
+[17/Feb/2016 13:01:00] WARNING [django.request:170] Not Found: /media/leapmembers/prakhar.jpg
+[17/Feb/2016 13:32:30] WARNING [django.request:170] Not Found: /login/css/style.css
+[17/Feb/2016 13:32:30] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[17/Feb/2016 13:32:30] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[17/Feb/2016 13:32:30] WARNING [django.request:170] Not Found: /login/js/demo.js
+[17/Feb/2016 13:32:31] WARNING [django.request:170] Not Found: /login/js/demo.js
+[17/Feb/2016 13:36:44] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[19/Feb/2016 17:30:13] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 17:30:13] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:30:13] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:30:13] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:30:13] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 17:30:14] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:30:14] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:30:14] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:30:39] WARNING [django.request:170] Not Found: /favicon.ico
+[19/Feb/2016 17:30:47] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 17:30:47] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:30:47] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:30:47] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:30:47] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:30:47] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:30:47] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:30:54] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 17:30:54] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:30:54] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:30:54] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:30:54] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:30:54] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:30:54] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:31:01] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 17:31:01] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:31:01] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:31:01] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:31:01] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:31:01] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:31:01] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:32:14] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 17:32:14] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:32:14] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:32:14] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:32:14] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:32:14] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:32:14] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:33:13] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 17:33:13] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:33:13] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:33:13] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:33:13] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:33:13] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:33:13] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:33:16] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 17:33:16] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:33:16] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:33:16] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:33:16] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:33:16] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:33:16] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:33:21] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 17:33:21] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:33:21] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:33:21] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:33:21] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:33:21] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:33:21] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:33:29] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 17:33:29] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:33:29] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:33:29] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:33:29] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:33:29] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:33:29] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:34:52] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 17:34:52] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:34:52] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:34:52] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:34:52] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:34:52] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:34:52] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:40:51] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 17:40:51] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:40:51] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:40:51] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:40:51] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 17:40:51] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:40:51] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:40:51] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:40:59] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 17:40:59] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:40:59] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:40:59] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 17:40:59] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 17:40:59] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 17:40:59] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 18:49:06] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 18:49:06] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 18:49:06] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 18:49:06] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 18:49:06] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 18:49:06] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 18:49:06] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 18:49:38] WARNING [django.request:170] Not Found: /favicon.ico
+[19/Feb/2016 18:52:06] WARNING [django.request:170] Not Found: /mentors/images/community.png
+[19/Feb/2016 18:54:22] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 18:54:22] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 18:54:22] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 18:54:22] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 18:54:22] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 18:54:22] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 18:54:22] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 21:08:13] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 21:08:13] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 21:08:13] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 21:08:13] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 21:08:15] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 21:08:15] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 21:08:15] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 21:08:15] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 21:50:57] WARNING [django.request:170] Not Found: /login/css/style.css
+[19/Feb/2016 21:50:57] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 21:50:57] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 21:50:57] WARNING [django.request:170] Not Found: /login/js/demo.js
+[19/Feb/2016 21:50:57] WARNING [django.request:170] Not Found: /login/js/materialize.min.js
+[19/Feb/2016 21:50:57] WARNING [django.request:170] Not Found: /login/js/jquery.particleground.js
+[19/Feb/2016 21:50:57] WARNING [django.request:170] Not Found: /login/js/demo.js

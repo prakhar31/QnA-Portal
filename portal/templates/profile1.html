@@ -1,0 +1,202 @@
+{% extends "base.html" %}
+<html>
+<head>
+<title>{%block title%}Profile{%endblock%}</title>
+<link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<style type="text/css">
+pre{white-space: pre-wrap;}
+</style>
+  </head>
+  <body>
+    {%block body%}
+  <div id="textarea">
+    <div class=" fade-in one"><br><br>
+ <div class="card-panel white">
+ <div class="row">
+      <div class="col s3" style="padding-top:3%;"><img src="{{pu.image.url}}" class="responsive-img" style="max-height:200px; border:solid 2px #fff;"></div>
+      <div class="col s9" style="padding-left:4%;"><p style="font-size:27px; font-weight:bold; font-family: 'Raleway', sans-serif;" id="id_name">{{pu.orgname}}<br></p>
+	  </span> <span style="font-size:20px; font-family: 'Raleway', sans-serif;"  id="id_institutionname">{{pu.institution}}</span>
+<br>	  <div class="row" style="margin-left:-1vw; margin-top:0.5vw;"><div class="col s0.1"><i class="material-icons">location_on</i></div><div class="col s9" style="margin-left:-1vw;"> <span style="font-size:16px; font-family: 'Raleway', sans-serif; font-weight:light;"  id="id_location"> {{pu.location}}</span></div></div>
+	  <div class="row" style="margin-left:-1vw;"><div class="col s0.1"><i class="material-icons">phone</i></div><div class="col s9" style="margin-left:-1vw;"> <span style="font-size:16px; font-family: 'Raleway', sans-serif; font-weight:light;"  id="id_location"> {{pu.contact}}</span></div></div>
+{% if pu.weblink %}	  <div class="row" style="margin-left:-1vw;"><div class="col s0.1"><i class="material-icons">language</i></div><div class="col s9" style="margin-left:-1vw;"> <span style="font-size:16px; font-family: 'Raleway', sans-serif; font-weight:light;"  id="id_location"> <a href="{{pu.weblink">{{pu.weblink}}</a></span></div></div>{%endif%}
+{% if pu.fbprofile %}	 <div class="row" style="margin-left:-1vw;"><div class="col s0.1"><i class="material-icons">person_pin</i></div><div class="col s9" style="margin-left:-1vw;"> <span style="font-size:16px; font-family: 'Raleway', sans-serif; font-weight:light;"  id="id_location">
+  <a href="{{pu.fbprofile}}">{{pu.fbprofile}}</a></span></div></div>{%endif%}
+   <div class="row" style="margin-left:-1vw;"><div class="col s0.1"><i class="material-icons">email</i></div><div class="col s9" style="margin-left:-1vw;"> <span style="font-size:16px; font-family: 'Raleway', sans-serif; font-weight:light;"  id="id_location"> {{pu.email}}</span></div></div>
+{% if pu.introduction %}   <div class="row" style="margin-left:-1vw;"><div class="col s0.1"><i class="material-icons">comment</i></div><div class="col s9" style="margin-left:-1vw;"> <span style="font-size:16px; font-family: 'Raleway', sans-serif; font-weight:light;"  id="id_location"><a href = "{{pu.introduction.url}}">Introductory Presentation</a> </span></div></div>{% endif %}
+
+{% if request.user == pu.user %}
+ <div style="position:relative; padding-left:90%;">
+  <a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="Edit Profile" href="/editprofile/{{pu.user.username}}"><i class="material-icons">mode_edit</i></a>
+</div>{%endif%}
+	  </div>
+  </div>
+  </div><br>
+  {% if projects %}
+  <div class=" fade-in two">
+  <div class="card-panel white">
+<span class = "section">
+    <h4 align = "center" style="color:#000000;">Projects<br><br></h4>
+
+      {% for project in projects %}
+
+		<h4 align="center" style="color:#000000;">{{project.name}}<br></h4>
+	<ul type="disc">
+	<li>
+    <p align="left"> <span style="font-weight:lighter; font-size:20px; font-weight:bold;">Project Title:</span> <span style="font-size:21px; "  id="id_projectname"> {{project.name}}</span>
+<br>	  <span style="font-weight:lighter; font-size:20px; font-weight:bold;">Description:</span> <span style="font-size:16px;"  id="id_description"> {{project.description}}</span>
+<br>	  <span style="font-weight:lighter; font-size:20px; font-weight:bold;">Achievements:</span> <span style="font-size:16px;"  id="id_achievement"> {{project.achievements}}</span>
+<br>    <span style="font-weight:lighter; font-size:20px; font-weight:bold;">Team Strength:</span> <span style="font-size:16px;"  id="id_teamstrength"> {{project.teamstrength}}</span>
+        <span style="font-weight:lighter; font-size:20px; font-weight:bold;">  | Working Area:</span> <span style="font-size:16px;"  id="id_workingarea"> {{project.workingarea}}</span>
+
+      {% if not project.details.url == '/media/False' %}
+      <br><span style="font-weight:lighter; font-size:20px; font-weight:bold;">Attachment:</span> <a href = {{project.details.url}}>Details</a><br>
+
+      {% endif %}
+{% if request.user == pu.user %}
+<div style="position:relative; padding-left:90%;">
+  <a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="Edit Project" href="/editproject/{{project.id}}"><i class="material-icons">mode_edit</i></a>
+
+      </div>
+<a href = "/deleteproject/{{project.id}}" class="bn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Delete Project"><img src="/media/del.png" class="responsive-img" align="left" style="margin-top: -1vw;"></a><br>{% endif %}
+<div class="divider"></div>
+ </p></li>
+</ul>
+	{% endfor %}
+{% if request.user == pu.user %}<a href="/addproject/" style="font-size:15px; color:#0d47a1;">Add Project</a>{% endif %}
+</div>
+</div><br>
+{% else %}
+{% if request.user == pu.user %}
+<div class=" fade-in two">
+<div class="card-panel white">
+<a href="/addproject/" style="font-size:15px; color:#0d47a1;">Add Project</a>
+</div>
+</div>
+{% endif %}
+  <br>
+  {% endif %}
+
+  {%if events%}
+  <div class=" fade-in three">
+  <div class="card-panel white">
+<span class = "section">
+    <h4 align = "center" style="color:#000000;">Events<br><br></h4>
+    {% for event in events %}
+		<h4 align="center" style="color:#000000;">{{event.name}} <br></h4>
+	    <p align="left"> <span style="font-weight:lighter; font-size:20px; font-weight:bold;">Title:</span> <span style="font-size:22px;"  id="id_eventname"> {{event.name}}</span>
+<br>	  <span style="font-weight:lighter; font-size:20px; font-weight:bold;">Description:</span> <span style="font-size:16px;"  id="id_description">{{event.description}}</span>
+<br>  {% if event.details %}
+{% if not event.details.url == '/media/False'%}
+<span style="font-weight:lighter; font-size:20px; font-weight:bold;">Attachment: </span><a href = {{event.details.url}}>Details</a><br>
+{%endif%}{%endif%}
+ </p></span>
+{% if request.user == pu.user %}
+<div style="position:relative; padding-left:90%;">
+  <a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="Edit Event" href="/editevent/{{event.id}}"><i class="material-icons">mode_edit</i></a>
+
+      </div>
+<a href = "/deleteevent/{{event.id}}" class="bn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Delete Event"><img src="/media/del.png" class="responsive-img" align="left" style="margin-top: -1vw;"></a><br>{% endif %}
+ <div class="divider"></div><br>
+{%endfor%}
+  {% if request.user == pu.user %}<a href="/addevent/" style="font-size:15px; color:#0d47a1;">Add Event</a>{% endif %}
+  </div>
+  </div>
+  {% else %}
+  {% if request.user == pu.user %}
+ <div class="card-panel white">
+  <a href="/addevent/" style="font-size:15px; color:#0d47a1;">Add Event</a>
+</div>
+{% endif %}
+{%endif%}
+<br>
+{%if alumni%}
+  <div class=" fade-in three">
+  <div class="card-panel white">
+<span class = "section">
+  <h4 align = "center" style="color:#000000;">Notable Alumni<br><br></h4>
+  {% for a in alumni %}
+  <h4 align="center" style="color:#000000;">{{alumni.name}} <span id = "id_number">{{a.name}}<br></h4>
+<ul type="disc">
+<li>
+<span style="font-weight:lighter; font-size:20px; font-weight:bold;">About:</span> <span style="font-size:16px;"  id="id_description"> {{a.about}} </span>
+</li>
+{% if request.user == pu.user %}
+<div style="position:relative; padding-left:90%;">
+  <a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="Edit Alumni" href="/editalumnus/{{alumnus.id}}"><i class="material-icons">mode_edit</i></a>
+      </div>
+<a href = "/deletealumni/{{a.id}}" class="bn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Delete Alumni"><img src="/media/del.png" class="responsive-img" align="left" style="margin-top: -1vw;"></a><br>
+<div class="divider"></div>{% endif %}
+{%endfor%}<br>
+{% if request.user == pu.user %}<a href="/addalumnus/" style="font-size:15px; color:#0d47a1;">Add Alumnus</a>{% endif %}
+</div>
+</div>
+{% else %}
+{% if request.user == pu.user %}
+<div class=" fade-in two">
+<div class="card-panel white">
+<a href="/addalumnus/" style="font-size:15px; color:#0d47a1;">Add Alumnus</a>
+</div>
+</div>
+{% endif %}
+{% endif %}
+<br>
+{%if media%}
+  <div class=" fade-in three">
+  <div class="card-panel white">
+<span class = "section">
+  <h4 align = "center" style="color:#000000;">Media Publications<br><br></h4>
+  {% for med in media %}
+  <h4 align="center" style="color:#000000;">{{med.title}} <span id = "id_number"><br></h4>
+<ul type="disc">
+<li>
+  <p align="left"><span style="font-weight:lighter; font-size:20px; font-weight:bold;">Description:</span> <span style="font-size:16px;"  id="id_description"> {{med.description}} </span>
+ </span>
+<br>    <span style="font-weight:lighter; font-size:20px; font-weight:bold;">Link:</span> <span style="font-size:16px;"  id="id_description"> {{med.link}} </span>
+</span>
+</p></li>
+{% if request.user == pu.user %}
+<div style="position:relative; padding-left:90%;">
+  <a class="btn-floating btn-large waves-effect waves-light blue tooltipped" data-position="bottom" data-delay="50" data-tooltip="Edit Media" href="/editproject/{{project.id}}"><i class="material-icons">mode_edit</i></a>
+
+      </div>
+<a href = "/deletemedia/{{med.id}}" class="bn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Delete Media"><img src="/media/del.png" class="responsive-img" align="left" style="margin-top: -1vw;"></a><br><div class="divider"></div>{% endif %}
+{%endfor%}
+{% if request.user == pu.user %}<br><a href="/addmedia/" style="font-size:15px; color:#0d47a1;">Add Media Publications</a>{% endif %}
+</div>
+</div>
+{% else %}
+{% if request.user == pu.user %}
+<div class=" fade-in two">
+<div class="card-panel white">
+<a href="/addmedia/" style="font-size:15px; color:#0d47a1;">Add Media Publications</a>
+</div>
+</div>
+{% endif %}
+
+{% endif %}
+
+
+
+</div></div>
+<br>
+    {% endblock %}
+</body>
+  <script type="text/javascript">
+  </script>
+  <script>
+
+    $(".button-collapse").sideNav();
+
+	</script>
+  <script>
+  $(document).ready(function(){
+      $('.modal-trigger').leanModal();
+    });
+   </script>
+</html>
